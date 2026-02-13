@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Hotel </title>
+    <meta name="description" content="Experience luxury accommodation at Grand Hotel. Best rooms, restaurant, and amenities await you.">
+    <meta name="keywords" content="hotel, room booking, restaurant, luxury stay, accommodation">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="image/download.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                 <div class="logo-icon">
+                    <img src="/image/download.png">
+                </div>
+                <span class="logo-text">Grand Hotel</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="resturent.html">Restaurant</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#reservation" class="btn-reserve">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Experience Luxury & Comfort</h1>
+            <p>World-class accommodation with exceptional service in the heart of the city</p>
+            <div class="hero-buttons">
+                <a href="#reservation" class="btn-hero">Book Your Stay</a>
+                <a href="#rooms" class="btn-hero-outline">View Rooms</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Welcome to Grand Hotel</h2>
+                    <p class="section-subtitle">Where luxury meets comfort since 1995</p>
+                    
+                    <p>Grand Hotel offers an unparalleled experience in luxury accommodation. With over 25 years of excellence, we've been providing exceptional service to guests from around the world.</p>
+                    
+                    <p>Our commitment to quality, attention to detail, and dedication to guest satisfaction sets us apart as one of the premier hotels in the region.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-concierge-bell"></i>
+                            <h4>24/7 Service</h4>
+                            <p>Round-the-clock concierge service</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <h4>Award Winning</h4>
+                            <p>Multiple hospitality awards</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h4>Prime Location</h4>
+                            <p>Central city location</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="image/1st.jpg" alt="Grand Hotel exterior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section class="section rooms" id="rooms">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Rooms & Suites</h2>
+                <p class="section-subtitle">Luxurious accommodations designed for your comfort</p>
+            </div>
+            
+            <div class="room-cards">
+                <div class="room-card">
+                    <div class="room-img">
+                        <img src="image/27fded389d6964231eb402485826ef50.jpg" alt="Deluxe Room">
+                        <div class="room-badge">Most Popular</div>
+                    </div>
+                    <div class="room-info">
+                        <h3>Deluxe Room</h3>
+                        <p>Spacious room with city view, perfect for business travelers and couples</p>
+                        <ul class="room-features">
+                            <li><i class="fas fa-wifi"></i> Free WiFi</li>
+                            <li><i class="fas fa-tv"></i> Smart TV</li>
+                            <li><i class="fas fa-snowflake"></i> AC</li>
+                            <li><i class="fas fa-coffee"></i> Coffee Maker</li>
+                        </ul>
+                        <div class="room-price">
+                            <span>$189 <small>/night</small></span>
+                            <a href="#reservation" class="btn-room" data-room="Deluxe Room">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="room-card">
+                    <div class="room-img">
+                        <img src="image/2872f2a1ec6bd86496082827aa4d824b.jpg" alt="Executive Suite">
+                        <div class="room-badge">Executive</div>
+                    </div>
+                    <div class="room-info">
+                        <h3>Executive Suite</h3>
+                        <p>Luxurious suite with separate living area, ideal for families</p>
+                        <ul class="room-features">
+                            <li><i class="fas fa-wifi"></i> Free WiFi</li>
+                            <li><i class="fas fa-tv"></i> Two Smart TVs</li>
+                            <li><i class="fas fa-bath"></i> Marble Bathroom</li>
+                            <li><i class="fas fa-wine-glass"></i> Mini Bar</li>
+                        </ul>
+                        <div class="room-price">
+                            <span>$299 <small>/night</small></span>
+                            <a href="#reservation" class="btn-room" data-room="Executive Suite">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="room-card">
+                    <div class="room-img">
+                        <img src="image/download.jpg" alt="Presidential Suite">
+                        <div class="room-badge">Luxury</div>
+                    </div>
+                    <div class="room-info">
+                        <h3>Presidential Suite</h3>
+                        <p>Ultimate luxury with panoramic views and premium amenities</p>
+                        <ul class="room-features">
+                            <li><i class="fas fa-wifi"></i> Free WiFi</li>
+                            <li><i class="fas fa-tv"></i> Three Smart TVs</li>
+                            <li><i class="fas fa-bath"></i> Jacuzzi</li>
+                            <li><i class="fas fa-dumbbell"></i> Private Gym Access</li>
+                            <li><i class="fas fa-concierge-bell"></i> Butler Service</li>
+                        </ul>
+                        <div class="room-price">
+                            <span>$599 <small>/night</small></span>
+                            <a href="reservation.html" class="btn-room" data-room="Presidential Suite">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Experience world-class services and amenities</p>
+            </div>
+            
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Fine Dining</h3>
+                    <p>Multiple restaurants offering international cuisines</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-swimming-pool"></i>
+                    </div>
+                    <h3>Infinity Pool</h3>
+                    <p>Rooftop pool with stunning city views</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Spa & Wellness</h3>
+                    <p>Full-service spa with professional therapists</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Fitness Center</h3>
+                    <p>State-of-the-art gym with personal trainers</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Valet Parking</h3>
+                    <p>Complimentary valet parking for guests</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <h3>24/7 Concierge</h3>
+                    <p>Round-the-clock concierge service</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurant Section -->
+    <section class="section restaurant" id="restaurant">
+        <div class="container">
+            <div class="restaurant-content">
+                <div class="restaurant-text">
+                    <h2 class="section-title">Signature Restaurant</h2>
+                    <p class="section-subtitle">Award-winning dining experience</p>
+                    <p>Our flagship restaurant, "The Panorama," offers an exquisite culinary journey featuring modern international cuisine with locally sourced ingredients.</p>
+                    
+                    <div class="restaurant-hours">
+                        <h4><i class="fas fa-clock"></i> Opening Hours</h4>
+                        <p><strong>Breakfast:</strong> 7:00 AM - 11:00 AM</p>
+                        <p><strong>Lunch:</strong> 12:00 PM - 3:00 PM</p>
+                        <p><strong>Dinner:</strong> 6:00 PM - 11:00 PM</p>
+                    </div>
+                    
+                    <a href="#reservation" class="btn-restaurant" data-type="restaurant">
+                        <i class="fas fa-utensils"></i> Reserve a Table
+                    </a>
+                </div>
+                
+                <div class="restaurant-image">
+                    <img src="image/daining.jpg" alt="Restaurant interior">
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="section-header">
+    <h2 class="section-title"> GELLARY</h2>
+    <p class="section-subtitle">Explore our gallery to see recent rooms, another side lounch we’ve done for clients.</p>
+</div>
+    <!-- Gallery Section -->
+     <div class="gallery-grid" id="gallery">
+        
+            <!-- Room 1 -->
+            <div class="gallery-item" data-category="rooms">
+                <div class="gallery-image">
+                    <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Deluxe Room with City View" 
+                         loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Deluxe Room</h3>
+                            <p>City view room with modern amenities</p>
+                        </div>
+                        <button class="gallery-expand" data-image="room1-full">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Restaurant 1 -->
+            <div class="gallery-item" data-category="restaurant">
+                <div class="gallery-image">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Fine Dining Restaurant" 
+                         loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Main Restaurant</h3>
+                            <p>Elegant dining experience</p>
+                        </div>
+                        <button class="gallery-expand" data-image="restaurant1-full">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pool -->
+            <div class="gallery-item" data-category="amenities">
+                <div class="gallery-image">
+                    <img src="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Infinity Pool" 
+                         loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Infinity Pool</h3>
+                            <p>Rooftop pool with panoramic views</p>
+                        </div>
+                        <button class="gallery-expand" data-image="pool1-full">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spa -->
+            <div class="gallery-item" data-category="amenities">
+                <div class="gallery-image">
+                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Spa & Wellness Center" 
+                         loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Spa Center</h3>
+                            <p>Relaxation and wellness treatments</p>
+                        </div>
+                        <button class="gallery-expand" data-image="spa1-full">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Executive Suite -->
+            <div class="gallery-item" data-category="rooms">
+                <div class="gallery-image">
+                    <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Executive Suite" 
+                         loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Executive Suite</h3>
+                            <p>Luxury suite with separate living area</p>
+                        </div>
+                        <button class="gallery-expand" data-image="suite1-full">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hotel Exterior -->
+            <div class="gallery-item" data-category="exterior">
+                <div class="gallery-image">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Hotel Building" 
+                         loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Hotel Exterior</h3>
+                            <p>Modern architecture with grand entrance</p>
+                        </div>
+                        <button class="gallery-expand" data-image="exterior1-full">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bar Area -->
+            <div class="gallery-item" data-category="restaurant">
+                <div class="gallery-image">
+                    <img src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Sky Bar</h3>
+                            <p>Cocktails with a view</p>
+                        </div>
+                        <button class="gallery-expand" data-image="bar1-full">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gym -->
+            <div class="gallery-item" data-category="amenities">
+                <div class="gallery-image">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Fitness Center" 
+                         loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Fitness Center</h3>
+                            <p>State-of-the-art equipment</p>
+                        </div>
+                        <button class="gallery-expand" data-image="gym1-full">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wedding Event -->
+            <div class="gallery-item" data-category="events">
+                <div class="gallery-image">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Wedding Event" 
+                         loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Wedding Event</h3>
+                            <p>Elegant wedding celebrations</p>
+                        </div>
+                        <button class="gallery-expand" data-image="event1-full">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Presidential Suite -->
+            <div class="gallery-item" data-category="rooms">
+                <div class="gallery-image">
+                    <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Presidential Suite" 
+                         loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Presidential Suite</h3>
+                            <p>Ultimate luxury accommodation</p>
+                        </div>
+                        <button class="gallery-expand" data-image="presidential1-full">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conference Room -->
+            <div class="gallery-item" data-category="events">
+                <div class="gallery-image">
+                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Conference Room" 
+                         loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Conference Room</h3>
+                            <p>Business meetings and events</p>
+                        </div>
+                        <button class="gallery-expand" data-image="conference1-full">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lobby -->
+            <div class="gallery-item" data-category="exterior">
+                <div class="gallery-image">
+                    <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Hotel Lobby" 
+                         loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Grand Lobby</h3>
+                            <p>Elegant reception area</p>
+                        </div>
+                        <button class="gallery-expand" data-image="lobby1-full">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="gallery-load-more">
+            <button id="loadMoreBtn" class="btn-load-more">
+                <i class="fas fa-plus"></i> Load More Photos
+            </button>
+            <p class="photo-count">Showing <span id="shownCount">12</span> of <span id="totalCount">24</span> photos</p>
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+        <button class="lightbox-close" id="lightboxClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="lightbox-nav lightbox-prev">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-nav lightbox-next">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        <div class="lightbox-image-container">
+            <img id="lightboxImage" src="" alt="">
+            <div class="lightbox-loader">
+                <div class="loader-spinner"></div>
+            </div>
+        </div>
+        
+        <div class="lightbox-info">
+            <h3 id="lightboxTitle">Image Title</h3>
+            <p id="lightboxDescription">Image description goes here</p>
+            <div class="lightbox-meta">
+                <span><i class="fas fa-camera"></i> <span id="lightboxCategory">Category</span></span>
+                <span><i class="fas fa-image"></i> <span id="imageCounter">1 / 12</span></span>
+            </div>
+            <div class="lightbox-actions">
+                <button class="action-btn" id="downloadBtn">
+                    <i class="fas fa-download"></i> Download
+                </button>
+                <button class="action-btn" id="shareBtn">
+                    <i class="fas fa-share-alt"></i> Share
+                </button>
+            </div>
+        </div>
+        
+        <div class="lightbox-thumbnails">
+            <!-- Thumbnails will be generated by JavaScript -->
+        </div>
+    </div>
+</div>
+
+    <!-- Contact Section -->
+      <section class="contact-grid-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">Choose your preferred way to connect with us</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Contact Form -->
+    <section class="floating-form-section">
+        <div class="container">
+            <div class="floating-form-container">
+                <div class="form-header">
+                    <h2><i class="fas fa-paper-plane"></i> Send Message</h2>
+                    <p>We'll get back to you within 24 hours</p>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group floating-group">
+                        <input type="text" id="name" required>
+                        <label for="name">Full Name</label>
+                        <div class="floating-line"></div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group floating-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Email Address</label>
+                            <div class="floating-line"></div>
+                        </div>
+                        
+                        <div class="form-group floating-group">
+                            <input type="tel" id="phone">
+                            <label for="phone">Phone Number</label>
+                            <div class="floating-line"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group floating-group">
+                        <select id="inquiry" required>
+                            <option value=""></option>
+                            <option value="reservation">Room Reservation</option>
+                            <option value="restaurant">Restaurant Booking</option>
+                            <option value="event">Event Planning</option>
+                            <option value="feedback">Feedback & Suggestions</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="partnership">Partnership</option>
+                        </select>
+                        <label for="inquiry">Type of Inquiry</label>
+                        <div class="floating-line"></div>
+                    </div>
+                    
+                    <div class="form-group floating-group">
+                        <textarea id="message" rows="4" required></textarea>
+                        <label for="message">Your Message</label>
+                        <div class="floating-line"></div>
+                    </div>
+                    
+                    <div class="form-options">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="newsletter" checked>
+                            <label for="newsletter">Subscribe to newsletter</label>
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="urgent">
+                            <label for="urgent">Mark as urgent</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-submit">
+                        <button type="submit" class="btn-submit">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-icon">
+                                <i class="fas fa-paper-plane"></i>
+                            </span>
+                        </button>
+                        <p class="form-note">
+                            <i class="fas fa-lock"></i> Your information is secure and private
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Contact Section -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Our Team</h2>
+                <p class="section-subtitle">Meet the people who will assist you</p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Sarah Johnson">
+                    </div>
+                    <h3>Sarah Johnson</h3>
+                    <p class="team-role">Concierge Manager</p>
+                    <div class="team-contact">
+                        <a href="tel:+15551234567"><i class="fas fa-phone"></i></a>
+                        <a href="mailto:sarah@grandhotel.com"><i class="fas fa-envelope"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Michael Chen">
+                    </div>
+                    <h3>Michael Chen</h3>
+                    <p class="team-role">Reservation Specialist</p>
+                    <div class="team-contact">
+                        <a href="tel:+15551234568"><i class="fas fa-phone"></i></a>
+                        <a href="mailto:michael@grandhotel.com"><i class="fas fa-envelope"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Emma Wilson">
+                    </div>
+                    <h3>Emma Wilson</h3>
+                    <p class="team-role">Guest Relations</p>
+                    <div class="team-contact">
+                        <a href="tel:+15551234569"><i class="fas fa-phone"></i></a>
+                        <a href="mailto:emma@grandhotel.com"><i class="fas fa-envelope"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+  
+   
+
+    <!-- Reservation Section -->
+    <section class="section reservation" id="reservation">
+        <div class="container">
+            <div class="reservation-header">
+                <h2 class="section-title">Make a Reservation</h2>
+                <p class="section-subtitle">Book your stay or reserve a table at our restaurant</p>
+            </div>
+            
+            <div class="reservation-tabs">
+                <button class="tab-btn active" data-tab="hotel">Hotel Booking</button>
+                <a href="#" class="tab-btn" data-tab="restaurant">Restaurant Reservation</a>
+            </div>
+            
+            <div class="tab-content active" id="hotel-tab">
+                <form class="reservation-form" id="hotelForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="John Smith">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="+1 (555) 123-4567">
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Number of Guests *</label>
+                            <select id="guests" name="guests" required>
+                                <option value="">Select</option>
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5+">5+ Guests</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="checkin">Check-in Date *</label>
+                            <input type="date" id="checkin" name="checkin" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout">Check-out Date *</label>
+                            <input type="date" id="checkout" name="checkout" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="roomType">Room Type *</label>
+                            <select id="roomType" name="room_type" required>
+                                <option value="">Select Room Type</option>
+                                <option value="deluxe">Deluxe Room ($189/night)</option>
+                                <option value="executive">Executive Suite ($299/night)</option>
+                                <option value="presidential">Presidential Suite ($599/night)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="specialRequests">Special Requests</label>
+                            <textarea id="specialRequests" name="special_requests" rows="3" placeholder="Any special requirements or requests..."></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="form-submit">
+                        <a href="reservation.html" type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i> Submit Reservation
+                        </a>
+                        <p class="form-note">You will receive a confirmation email within 24 hours</p>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="tab-content" id="restaurant-tab">
+                <form class="reservation-form" id="restaurantForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="rName">Full Name *</label>
+                            <input type="text" id="rName" name="name" required placeholder="John Smith">
+                        </div>
+                        <div class="form-group">
+                            <label for="rEmail">Email Address *</label>
+                            <input type="email" id="rEmail" name="email" required placeholder="john@example.com">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="rPhone">Phone Number *</label>
+                            <input type="tel" id="rPhone" name="phone" required placeholder="+0 123-4567">
+                        </div>
+                        <div class="form-group">
+                            <label for="rGuests">Number of Guests *</label>
+                            <select id="rGuests" name="guests" required>
+                                <option value="">Select</option>
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5">5 Guests</option>
+                                <option value="6">6 Guests</option>
+                                <option value="7+">7+ Guests</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="rDate">Reservation Date *</label>
+                            <input type="date" id="rDate" name="reservation_date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="rTime">Reservation Time *</label>
+                            <select id="rTime" name="reservation_time" required>
+                                <option value="">Select Time</option>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="18:30">6:30 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="19:30">7:30 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                                <option value="20:30">8:30 PM</option>
+                                <option value="21:00">9:00 PM</option>
+                                <option value="21:30">9:30 PM</option>
+                                <option value="22:00">10:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="rRequests">Special Requests</label>
+                        <textarea id="rRequests" name="special_requests" rows="4" placeholder="Dietary restrictions, celebration notes, or special requests..."></textarea>
+                    </div>
+                    
+                    <div class="form-submit">
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-utensils"></i> Reserve Table
+                        </button>
+                        <p class="form-note">We will confirm your reservation via email or phone call</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-crown"></i>
+                        <h3>Grand Hotel</h3>
+                    </div>
+                    <p class="footer-about">A world-class luxury hotel offering exceptional experiences, fine dining, and impeccable service in the heart of the city.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#rooms">Rooms & Suites</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#restaurant">Restaurant</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Luxury Avenue, NY 10001</p>
+                        <p><i class="fas fa-phone"></i> + 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@grandhotel.com</p>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for special offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Grand Hotel. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
