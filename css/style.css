@@ -181,7 +181,7 @@ h1, h2, h3, h4 {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(10, 47, 68, 0.7), rgba(10, 47, 68, 0.7)), url('/image/tree.jpg');
+    background: linear-gradient(rgba(10, 47, 68, 0.7), rgba(10, 47, 68, 0.7)), url('image/tree.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
