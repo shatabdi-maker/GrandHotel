@@ -23,12 +23,10 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    color: var(--text-color);
     line-height: 1.6;
     overflow-x: hidden;
-      background-color: #e7e7e7;
-  color: #5d4707;
-}
+    background-color: #e7e7e7;
+    color: #5d4707;
 }
 
 h1, h2, h3, h4 {
@@ -182,10 +180,6 @@ h1, h2, h3, h4 {
 /* Hero Section */
 .hero {
     height: 100vh;
-<<<<<<< HEAD
-=======
-    background: linear-gradient(rgba(10, 47, 68, 0.7), rgba(10, 47, 68, 0.7));
->>>>>>> e8be78281eb0c3ac709627fad2dda9f01232e5cd
     background-size: cover;
     background-position: center;
     display: flex;
