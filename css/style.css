@@ -182,7 +182,10 @@ h1, h2, h3, h4 {
 /* Hero Section */
 .hero {
     height: 100vh;
+<<<<<<< HEAD
+=======
     background: linear-gradient(rgba(10, 47, 68, 0.7), rgba(10, 47, 68, 0.7));
+>>>>>>> e8be78281eb0c3ac709627fad2dda9f01232e5cd
     background-size: cover;
     background-position: center;
     display: flex;
@@ -1029,36 +1032,49 @@ h1, h2, h3, h4 {
     .navbar {
         padding: 10px 0;
     }
+
+    .navbar .container {
+        position: relative;
+    }
     
     .menu-toggle {
-        display: block;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
     }
     
     .nav-links {
-        position: fixed;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background-color: var(--white);
+        display: none;
         flex-direction: column;
         align-items: center;
-        padding: 20px 0;
-        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-        transform: translateY(-100%);
-        opacity: 0;
-        transition: var(--transition);
-        z-index: 999;
+        gap: 0;
+        background: rgb(233, 218, 169);
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 20px;
+        right: 20px;
+        width: auto;
+        padding: 12px 0;
+        border-radius: 8px;
+        box-shadow: var(--shadow);
     }
-    
-    .nav-links.active {
-        transform: translateY(0);
-        opacity: 1;
+
+    .nav-links.show {
+        display: flex;
     }
     
     .nav-links li {
-        margin: 15px 0;
+        width: 100%;
+        margin: 0;
+        text-align: center;
     }
-    
+     .nav-links li a {
+        display: block;
+        padding: 10px;
+        color: rgb(1, 1, 1);
+    }
     .hero {
         height: 80vh;
     }
@@ -1645,6 +1661,8 @@ h1, h2, h3, h4 {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 
 }
+
+
 
 .team-avatar img {
     width: 100%;
